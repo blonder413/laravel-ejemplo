@@ -1,20 +1,23 @@
 # .github/release.yml
 
-changelog:
-  exclude:
-    labels:
-      - ignore-for-release
-    authors:
-      - blonder413
-  categories:
-    - title: Breaking Changes 🛠
-      labels:
-        - Semver-Major
-        - breaking-change
-    - title: Exciting New Features 🎉
-      labels:
-        - Semver-Minor
-        - enhancement
-    - title: Other Changes
-      labels:
-        - "*"
+- name: Changelog Generator            
+  uses: timfallmk/github-changelog-generator-action@0.0.2
+
+# changelog:
+#   exclude:
+#     labels:
+#       - ignore-for-release
+#     authors:
+#       - blonder413
+#   categories:
+#     - title: Breaking Changes 🛠
+#       labels:
+#         - Semver-Major
+#         - breaking-change
+#     - title: Exciting New Features 🎉
+#       labels:
+#         - Semver-Minor
+#         - enhancement
+#     - title: Other Changes
+#       labels:
+#         - "*"
